@@ -14,6 +14,7 @@ CExampleListener::CExampleListener()
 
 
 
+
 void CExampleListener::onError(ZoomInstantSDKErrors errorCode, int detailErrorCode)
 {
 	CString info;
@@ -294,10 +295,11 @@ int CExampleListener::joinSession()
 	ZoomInstantSDKSessionContext sessionContext;
 	sessionContext.sessionName = L"Sessionname15081977";
 	sessionContext.sessionPassword = L"Sessionpassword";
-	sessionContext.userName = L"Username";
+	sessionContext.userName = L"Testing";
+	
 
 	// JWT for this session.
-	sessionContext.token = L"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBLZXkiOiJ1SlZ5ZGNOZWhpSVdQRUVIdGJ2c1dCT1FJSDBFbGMyaE1jVnIiLCJ2ZXJzaW9uIjoxLCJ1c2VyX2lkZW50aXR5IjoiQUFBVDE4NzYiLCJpYXQiOjE2MjIzOTI1NTMsImV4cCI6MTYyMjQ3ODk1MywidHBjIjoiU2Vzc2lvbm5hbWUxNTA4MTk3NyJ9.d2-WoQFhaEpBa9vX69A_hkfKZMCnCdOCarMgLMT6OPo";
+	sessionContext.token = L"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfa2V5IjoidUpWeWRjTmVoaUlXUEVFSHRidnNXQk9RSUgwRWxjMmhNY1ZyIiwidmVyc2lvbiI6MSwidXNlcl9pZGVudGl0eSI6IkFBQVQxODc2IiwiaWF0IjoxNjIyMzkyNTUzLCJleHAiOjE2MjI0Nzg5NTMsInRwYyI6IlNlc3Npb25uYW1lMTUwODE5NzcifQ.6BCfddF-7jmndW6p1ZfE4AGxM50duGi5El0lMOFZeo4";
 
 	// Video and audio options.
 	sessionContext.videoOption.localVideoOn = true;
